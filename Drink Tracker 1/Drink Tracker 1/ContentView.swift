@@ -123,7 +123,7 @@ struct ContentView: View {
                         
                         VStack(alignment: .center) {
                             
-                            Text("November 3, 2025")
+                            Text("November 5, 2025")
                                 .padding(.top, 85)
                                 .font(.system(size: 20, weight: .bold, design: .rounded))
                             
