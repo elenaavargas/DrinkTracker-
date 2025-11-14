@@ -5,6 +5,8 @@
 //  Created by Elena Vargas on 07/11/25.
 //
 
+// Wave structure
+
 import SwiftUI
 
 

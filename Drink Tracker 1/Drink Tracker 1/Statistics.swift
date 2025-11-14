@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Just an example, not working
 
 struct DrinkRecord: Identifiable {
     let id = UUID()
@@ -22,7 +23,7 @@ struct DrinkRecord: Identifiable {
 
 struct StatisticsView: View {
     
-    // ⭐️ Dati casuali simulati come richiesto dall'utente
+   
     let mockData: [DrinkRecord] = [
         DrinkRecord(day: "Tuesday", amount: 1),
         DrinkRecord(day: "Monday", amount: 2)
@@ -34,7 +35,7 @@ struct StatisticsView: View {
                 
                 
                 Section(header: Text("Your saves")) {
-                    // Itera sull'array di mockData
+                    
                     ForEach(mockData) { record in
                         HStack {
                             Text(record.day)
@@ -42,7 +43,7 @@ struct StatisticsView: View {
                             
                             Spacer()
                             
-                            // Mostra la quantità in ml
+                            
                             Text(record.amountInLiters)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(red: 0.2, green: 0.6, blue: 0.9)) // Stesso colore dell'acqua
